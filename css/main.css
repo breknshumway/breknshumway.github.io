@@ -1,0 +1,275 @@
+.navbar { grid-area: header; }
+.contact { grid-area: rside; }
+.main { grid-area: main; }
+.hours { grid-area: lside; }
+.gallery { grid-area: gallery; }
+.vid {grid-area: section1; }
+.moreInfo {grid-area: section2; }
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'lside main main rside'
+        'section1 section1 section1 section1'
+        'section2 section2 section2 section2'
+        'gallery gallery gallery gallery';
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0 150px;
+    font-size: 1.3em;
+    }
+
+
+html {
+    display: flex;
+    background-image: url('/photos/massage2.jpg');
+    background-position: left, bottom;
+    font-family: Apple Chancery, cursive;
+    justify-content: center;
+
+
+}
+
+
+
+#title {
+    font-size: 5em;
+    text-align:center;
+    color:black;
+    text-shadow:5px 5px 2px rgb(184, 183, 92);
+
+}
+
+#logo {
+    position: relative;
+    top: -95px;
+    left: -600px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.navbar {
+display: flex;
+flex-wrap: wrap;
+font-size: 1.75em;
+background-color:rgb(158, 212, 156, 0.7);
+justify-content: space-around;
+border-radius: 10px;
+}
+
+#contactBtn, #moreBtn, #galleryBtn {
+    background-color: rgb(158, 212, 156, 0.7);
+    padding: 5px 40px;
+    margin: 10px;
+    font-size: 1.0em;
+    font-family: Apple Chancery, cursive;
+    border-radius: 5px;
+}
+
+#con, #more, #gal{
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar > div {
+    margin: 20px;
+}
+
+
+.contact {
+    background-color:rgb(158, 212, 156, 0.7);
+    padding: 20px;
+    text-align: start;
+    display: table-column;
+    border-radius: 10px;
+}
+
+.contact > p {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.contact img {
+    width: 220px;
+    height: 330px;
+    margin: 0px 50px;
+    border-style: solid;
+    border-color: rgb(113, 119, 43);
+    border-width: 5px;
+}
+
+.contact figcaption{
+    font-size: .75em;
+    text-align: center;
+}
+
+#phone, #email {
+    color: black;
+}
+
+.main {
+    padding: 20px;
+    background-color:rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+}
+
+
+.main > p {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.hours {
+    padding: 20px;
+    background-color:rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+}
+
+#list > li {
+    display: flex;
+    text-align: start;
+}
+
+
+.vid {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color:rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+}
+
+.vid > p {
+    text-align: center;
+    font-size: 1.6em;
+}
+
+
+.vid > iframe {
+    margin: 20px auto;
+    border-width: 30px;
+    border-color: rgb(113, 119, 43);
+    border-style: double;
+
+}
+
+
+.moreInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+
+}
+
+.moreInfo button {
+    margin: 20px;
+    padding:10px 40px;
+    font-size: 30px;
+    font-family: Apple Chancery, cursive;
+    background-color: rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+
+}
+.moreInfo p {
+    font-size: 1.6em;
+}
+
+#hsPara, #dtPara, #atPara{
+    display: none;
+    padding: 10px;
+    border-style: solid;
+    font-size: 1.3em;
+
+}
+
+
+
+
+.gallery {
+    background-color:rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+}
+
+
+.gallery img {
+        margin-left: 60px;
+        margin-bottom: 40px;
+        border-style: double;
+        border-color: rgb(113, 119, 43);
+        border-width: 10px;
+}
+
+.gallery > p {
+    text-align: center;
+    font-size: 1.6em;
+
+}
+
+
+
+
+
+
+
+@media only screen and ( max-width: 980px){
+    .grid {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'main main'
+        'section1 section1'
+        'section2 section2'
+        'lside lside'
+        'gallery gallery '
+        'rside rside';
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    }
+
+    #title {
+        display: flex;
+        text-shadow:1px 1px 2px black;
+        flex-wrap: wrap;
+    }
+
+    
+    #logo {
+        display: none;
+    }
+
+
+    .contact {
+        font-size: 20px;
+        text-align: center;
+        display: table-column;
+        
+    }    
+    
+    .navbar {
+        display: flex;
+        margin: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+
+    .gallery img {
+        display: flex;
+        margin:  10px auto;
+
+    }
+
+
+}
+
+
