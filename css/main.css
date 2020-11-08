@@ -73,6 +73,7 @@ border-radius: 10px;
 #con, #more, #gal{
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 
 
@@ -91,6 +92,7 @@ border-radius: 10px;
 
 .contact > p {
     font-size: 1.6em;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -105,11 +107,13 @@ border-radius: 10px;
 
 .contact figcaption{
     font-size: .75em;
+    font-weight: bold;
     text-align: center;
 }
 
 #phone, #email {
     color: black;
+    font-weight: bold;
 }
 
 .main {
@@ -121,6 +125,7 @@ border-radius: 10px;
 
 .main > p {
     font-size: 1.6em;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -128,6 +133,10 @@ border-radius: 10px;
     padding: 20px;
     background-color:rgb(158, 212, 156, 0.7);
     border-radius: 10px;
+}
+
+.hours > p {
+    font-weight: bold;
 }
 
 #list > li {
@@ -147,6 +156,7 @@ border-radius: 10px;
 .vid > p {
     text-align: center;
     font-size: 1.6em;
+    font-weight: bold;
 }
 
 
@@ -173,6 +183,7 @@ border-radius: 10px;
     margin: 20px;
     padding:10px 40px;
     font-size: 30px;
+    font-weight: bold;
     font-family: Apple Chancery, cursive;
     background-color: rgb(158, 212, 156, 0.7);
     border-radius: 10px;
@@ -180,6 +191,7 @@ border-radius: 10px;
 }
 .moreInfo p {
     font-size: 1.6em;
+    font-weight: bold;
 }
 
 #hsPara, #dtPara, #atPara{
@@ -189,7 +201,6 @@ border-radius: 10px;
     font-size: 1.3em;
 
 }
-
 
 
 
@@ -210,6 +221,7 @@ border-radius: 10px;
 .gallery > p {
     text-align: center;
     font-size: 1.6em;
+    font-weight: bold;
 
 }
 
@@ -244,6 +256,11 @@ border-radius: 10px;
     
     #logo {
         display: none;
+    }
+
+
+    #contactBtn, #moreBtn, #galleryBtn {
+        font-weight: bold;
     }
 
 
