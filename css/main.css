@@ -135,7 +135,7 @@ border-radius: 10px;
     border-radius: 10px;
 }
 
-.hours > p {
+.hours + p {
     font-weight: bold;
 }
 
