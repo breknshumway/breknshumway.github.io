@@ -266,6 +266,13 @@ border-radius: 10px;
         display: none;
     }
 
+    .navbar {
+        display: flex;
+        margin: 20px;
+        text-align: center;
+        font-size: 2.0em;
+        font-weight: bold;
+    }
 
     #contactBtn, #moreBtn, #galleryBtn {
         font-weight: bold;
@@ -281,17 +288,8 @@ border-radius: 10px;
         
     }    
 
-    .gallery {
-        font-size: 1.3em;
-    }
-    
-    .navbar {
-        display: flex;
-        margin: 20px;
-        text-align: center;
-        font-size: 2.0em;
-        font-weight: bold;
-    }
+
+
 
     .main {
         font-weight: bold;
@@ -305,14 +303,21 @@ border-radius: 10px;
             font-weight: bold;
         }
 
-
+    .gallery {
+        font-size: 1.3em;
+    }
     .gallery img {
         display: flex;
         margin:  10px auto;
     }
 
+
+    .moreInfo button {
+        font-size: 1.3em;
+    }
+
     .moreInfo > p {
-        font-size: 1em;
+        font-size: 1.3em;
         
     }
 
