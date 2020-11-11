@@ -28,10 +28,7 @@ html {
     background-position: left, bottom;
     font-family: 'Times New Roman', Times, serif;
     justify-content: center;
-
-
 }
-
 
 
 #title {
@@ -39,8 +36,8 @@ html {
     text-align:center;
     color:black;
     text-shadow:5px 5px 2px rgb(184, 183, 92);
-
 }
+
 
 #logo {
     position: relative;
@@ -52,6 +49,7 @@ html {
     opacity: .5;
 }
 
+
 .navbar {
 display: flex;
 flex-wrap: wrap;
@@ -61,6 +59,7 @@ justify-content: space-around;
 border-radius: 10px;
 }
 
+
 #contactBtn, #moreBtn, #galleryBtn {
     background-color: rgb(158, 212, 156, 0.7);
     padding: 5px 40px;
@@ -69,6 +68,7 @@ border-radius: 10px;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 5px;
 }
+
 
 #con, #more, #gal{
     text-decoration: none;
@@ -90,11 +90,13 @@ border-radius: 10px;
     border-radius: 10px;
 }
 
+
 .contact > p {
     font-size: 1.6em;
     font-weight: bold;
     text-align: center;
 }
+
 
 .contact img {
     width: 220px;
@@ -105,16 +107,19 @@ border-radius: 10px;
     border-width: 5px;
 }
 
+
 .contact figcaption{
     font-size: .75em;
     font-weight: bold;
     text-align: center;
 }
 
+
 #phone, #email {
     color: black;
     font-weight: bold;
 }
+
 
 .main {
     padding: 20px;
@@ -129,15 +134,18 @@ border-radius: 10px;
     text-align: center;
 }
 
+
 .hours {
     padding: 20px;
     background-color:rgb(158, 212, 156, 0.7);
     border-radius: 10px;
 }
 
+
 .hours  p:first-child {
     font-weight: bold;
 }
+
 
 #list > li {
     display: flex;
@@ -153,6 +161,7 @@ border-radius: 10px;
     border-radius: 10px;
 }
 
+
 .vid > p {
     text-align: center;
     font-size: 1.6em;
@@ -165,7 +174,6 @@ border-radius: 10px;
     border-width: 30px;
     border-color: rgb(113, 119, 43);
     border-style: double;
-
 }
 
 
@@ -176,8 +184,8 @@ border-radius: 10px;
     padding: 20px;
     background-color:rgb(158, 212, 156, 0.7);
     border-radius: 10px;
-
 }
+
 
 .moreInfo button {
     margin: 20px;
@@ -187,21 +195,21 @@ border-radius: 10px;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(158, 212, 156, 0.7);
     border-radius: 10px;
-
 }
+
+
 .moreInfo p {
     font-size: 1.6em;
     font-weight: bold;
 }
+
 
 #hsPara, #dtPara, #atPara{
     display: none;
     padding: 10px;
     border-style: solid;
     font-size: 1.3em;
-
 }
-
 
 
 .gallery {
@@ -211,22 +219,19 @@ border-radius: 10px;
 
 
 .gallery img {
-        margin-left: 60px;
+        margin-left: 50px;
         margin-bottom: 40px;
         border-style: double;
         border-color: rgb(113, 119, 43);
         border-width: 10px;
 }
 
+
 .gallery > p {
     text-align: center;
     font-size: 1.6em;
     font-weight: bold;
-
 }
-
-
-
 
 
 
@@ -249,15 +254,16 @@ border-radius: 10px;
     font-weight: bold;
     }
 
+
     body {
         font-size: 1.5em;
     }
 
-    
 
     #title {
         display: flex;
-        text-shadow:1px 1px 2px black;
+        padding: 0 20px;
+        text-shadow:5px 5px 2px rgb(184, 183, 92);
         flex-wrap: wrap;
     }
 
@@ -265,6 +271,7 @@ border-radius: 10px;
     #logo {
         display: none;
     }
+
 
     .navbar {
         display: flex;
@@ -274,10 +281,11 @@ border-radius: 10px;
         font-weight: bold;
     }
 
+
     #contactBtn, #moreBtn, #galleryBtn {
         font-weight: bold;
         margin:  10px 100%;
-        padding: 5px 100px;
+        padding: 5px 50px;
     }
 
 
@@ -285,27 +293,29 @@ border-radius: 10px;
         font-size: 1.3em;
         text-align: center;
         display: table-column;
-        
     }    
-
-
 
 
     .main {
         font-weight: bold;
     }
 
+
     .hours > p {
         font-weight: bold;
     }
-        
+       
+    
     #hsPara, #dtPara, #atPara{
             font-weight: bold;
-        }
+    }
+
 
     .gallery {
         font-size: 1.3em;
     }
+
+
     .gallery img {
         display: flex;
         margin:  10px auto;
@@ -316,9 +326,9 @@ border-radius: 10px;
         font-size: 1.3em;
     }
 
+
     .moreInfo > p {
         font-size: 1.3em;
-        
     }
 
     
