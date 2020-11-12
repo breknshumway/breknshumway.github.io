@@ -96,6 +96,7 @@ width: 100%;
     font-size: 1.6em;
     font-weight: bold;
     text-align: center;
+    padding-top: 20px;
 }
 
 
@@ -155,7 +156,6 @@ width: 100%;
 .vid {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     background-color:rgb(158, 212, 156, 0.7);
     border-radius: 10px;
 }
@@ -170,11 +170,12 @@ width: 100%;
 
 .vid iframe {
     display: flex;
-    margin: 20px auto;
+    margin: 20px;
     border-width: 30px;
     border-color: rgb(113, 119, 43);
     border-style: double;
     align-items: center;
+
 }
 
 
@@ -188,6 +189,7 @@ width: 100%;
 
 .moreInfo p:first-child {
     text-align: center;
+    padding-top: 20px;
 }
 
 
