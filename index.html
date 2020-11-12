@@ -3,14 +3,8 @@
 
 
 <head>
-
   <link rel="icon" href="/photos/logo.jpg">
-
-  <header>
-    <h1 id="title">Taste of Relaxation Massage<br><span><img id="logo" src="/photos/logo.jpg" alt="logo"></span></h1>
-    <link rel="stylesheet" href="css/main.css">
-  </header>
-
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 
@@ -19,10 +13,15 @@
 
   <div class="grid">
 
+    <header class="title">
+      <div id="title">Taste of Relaxation Massage</div>
+      <img id="logo" src="/photos/logo.jpg" alt="logo">
+    </header>
+
     <nav class="navbar">
-      <button id="contactBtn"><a id="con" href="#contact">Contact</a></button>
-      <button id="galleryBtn"><a id="gal" href="#gallery">Gallery</a></button>
-      <button id="moreBtn"><a id="more" href="#moreInfo">More&nbspInformation</a></button>
+      <button id="homeBtn" onclick="showHide2(['contact','main','hours'],['vieo','moreInfo','gallery'])">Home</button>
+      <button id="galleryBtn" onclick="showHide2(['gallery'],['contact','main','hours','moreInfo','video'])">Gallery</button>
+      <button id="moreBtn" onclick="showHide2(['moreInfo','video'],['contact','main','hours','gallery'])">More&nbspInformation</button>
     </nav>
 
 
@@ -32,13 +31,15 @@
         <img src="/photos/wife.jpeg" alt="wife">
         <figcaption>KaDance Shumway,<br> Licenced Massage Therapist.</figcaption>
       </figure>
-      <div>KaDance Shumway</div>
-      <a id="phone" href="tel:4354850551">435-485-0551<br></a>
-      <a id="email" href="mailto:kadancereid@gmail.com">kadancereid@gmail.com</a>
+      <div class="contactInfo">
+        <div>KaDance Shumway</div>
+        <a id="phone" href="tel:4354850551">435-485-0551<br></a>
+        <a style="margin-bottom: 50px;" id="email" href="mailto:kadancereid@gmail.com">kadancereid@gmail.com</a>
+      </div>
     </aside>
 
 
-    <main class="main">
+    <main class="main" id="main">
       <p>What can a Massage do for you?</p>
 
       <ul id="list1">
@@ -81,7 +82,7 @@
     </aside>
 
 
-    <section class="vid">
+    <section class="vid" id="video" style="display: none;">
       <p>Benefits of Massage Therapy</p>
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/dITkSlfHTk0" \frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
@@ -90,37 +91,39 @@
     </section>
 
 
-    <section class="moreInfo" id="moreInfo">
+    <section class="moreInfo" id="moreInfo" style="display: none;">
       <p>Click for More Information</p>
+      <div class="moreBtn">
+        <button id="hsBtn" onclick="showHide('hsPara')">Hot Stone Massage</button>
+        <p id="hsPara" style="display: none;"> A hot stone massage is a type of massage therapy. It’s used to help you
+          relax and ease tense muscles and damaged soft tissues throughout your body.
+          During a hot stone massage, smooth, flat, heated stones are placed on specific
+          parts of your body. The stones are usually made of basalt, a type of volcanic
+          rock that retains heat. Hot massage stones are heated to between 130 and 145 degrees.</p>
 
-      <button id="hsBtn" onclick="hsShow()">Hot Stone Massage</button>
-      <p id="hsPara">A hot stone massage is a type of massage therapy. It’s used to help you
-        relax and ease tense muscles and damaged soft tissues throughout your body.
-        During a hot stone massage, smooth, flat, heated stones are placed on specific
-        parts of your body. The stones are usually made of basalt, a type of volcanic
-        rock that retains heat. Hot massage stones are heated to between 130 and 145 degrees.</p>
+        <button id="dtBtn" onclick="showHide('dtPara')">Deep Tissue Massage</button>
+        <p id="dtPara" style="display: none;">Deep tissue massages are used to break up scar tissue and break down muscle adhesions
+          (the “knots” that we feel in our muscles are muscle adhesions, which are bands of rigid
+          and painful muscle tissue). These knots can inhibit our circulation and cause pain and
+          inflammation.</p>
 
-      <button id="dtBtn" onclick="dtShow()">Deep Tissue Massage</button>
-      <p id="dtPara">Deep tissue massages are used to break up scar tissue and break down muscle adhesions
-        (the “knots” that we feel in our muscles are muscle adhesions, which are bands of rigid
-        and painful muscle tissue). These knots can inhibit our circulation and cause pain and
-        inflammation.</p>
-
-      <button id="atBtn" onclick="atShow()">Aroma Therapy Massage</button>
-      <p id="atPara">Aromatherapy massage is Swedish massage therapy using massage oil or lotion that contains
-        essential oils (highly concentrated plant oils). During an aromatherapy massage, you inhale
-        these essential oil molecules or absorb them through your skin. They are thought to promote
-        beneficial changes in your mind and body by affecting the limbic system, a region of the brain
-        known to be involved in emotion.</p>
+        <button id="atBtn" onclick="showHide('atPara')">Aroma Therapy Massage</button>
+        <p id="atPara" style="display: none;">Aromatherapy massage is Swedish massage therapy using massage oil or lotion that contains
+          essential oils (highly concentrated plant oils). During an aromatherapy massage, you inhale
+          these essential oil molecules or absorb them through your skin. They are thought to promote
+          beneficial changes in your mind and body by affecting the limbic system, a region of the brain
+          known to be involved in emotion.</p>
+      </div>
     </section>
 
 
-    <section class="gallery" id="gallery">
+    <section class="gallery" id="gallery" style="display:none;">
       <p>Gallery</p>
-
-      <img src="/photos/gallery1.jpeg" alt="Massage">
-      <img src="/photos/gallery2.jpeg" alt="Massage">
-      <img src="/photos/gallery3.jpeg" alt="Massage">
+      <div class="galleryphotos">
+        <img src="/photos/gallery1.jpeg" alt="Massage">
+        <img src="/photos/gallery2.jpeg" alt="Massage">
+        <img src="/photos/gallery3.jpeg" alt="Massage">
+      </div>
     </section>
 
   </div>

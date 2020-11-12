@@ -1,19 +1,20 @@
-.navbar { grid-area: header; }
-.contact { grid-area: rside; }
+.title { grid-area: title; }
+.navbar { grid-area: nav; }
+.contact { grid-area: contact; }
 .main { grid-area: main; }
-.hours { grid-area: lside; }
+.hours { grid-area: hours; }
+.vid {grid-area: video; }
+.moreInfo {grid-area: moreInfo; }
 .gallery { grid-area: gallery; }
-.vid {grid-area: section1; }
-.moreInfo {grid-area: section2; }
-
 
 .grid {
     display: grid;
     grid-template-areas:
-        'header header header header'
-        'lside main main rside'
-        'section1 section1 section1 section1'
-        'section2 section2 section2 section2'
+        'title title title title'
+        'nav nav nav nav'
+        'hours main main contact'
+        'moreInfo moreInfo video video'
+        'moreInfo moreInfo video video'
         'gallery gallery gallery gallery';
     grid-gap: 10px;
     padding: 10px;
@@ -23,32 +24,34 @@
 
 
 html {
-    display: flex;
     background-image: url('/photos/massage2.jpg');
     background-position: left, bottom;
     font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
     justify-content: center;
 }
 
 
-#title {
-    font-size: 5em;
-    text-align:center;
-    color:black;
-    text-shadow:5px 5px 2px rgb(184, 183, 92);
+.title {
+    display: flex;
+    justify-content: center;
 }
 
+.title > div {
+    font-size: 4.5em;
+    color: black ;
+    text-shadow:2px 2px 2px rgb(197,172,135);
+}
 
 #logo {
-    position: relative;
-    top: -95px;
-    left: -600px;
-    width: 100px;
-    height: 100px;
+    position: absolute;
+    left: -0px;
+    height: 80px;
     border-radius: 10px;
-    opacity: .5;
 }
-
 
 .navbar {
 display: flex;
@@ -57,10 +60,11 @@ font-size: 1.75em;
 background-color:rgb(158, 212, 156, 0.7);
 justify-content: space-around;
 border-radius: 10px;
+width: 100%;
 }
 
 
-#contactBtn, #moreBtn, #galleryBtn {
+#homeBtn, #moreBtn, #galleryBtn {
     background-color: rgb(158, 212, 156, 0.7);
     padding: 5px 40px;
     margin: 10px;
@@ -69,14 +73,6 @@ border-radius: 10px;
     border-radius: 5px;
 }
 
-
-#con, #more, #gal{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-
 .navbar > div {
     margin: 20px;
 }
@@ -84,12 +80,17 @@ border-radius: 10px;
 
 .contact {
     background-color:rgb(158, 212, 156, 0.7);
-    padding: 20px;
     text-align: start;
     display: table-column;
     border-radius: 10px;
+    
 }
 
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .contact > p {
     font-size: 1.6em;
@@ -101,10 +102,8 @@ border-radius: 10px;
 .contact img {
     width: 220px;
     height: 330px;
-    margin: 0px 50px;
     border-style: solid;
     border-color: rgb(113, 119, 43);
-    border-width: 5px;
 }
 
 
@@ -169,25 +168,31 @@ border-radius: 10px;
 }
 
 
-.vid > iframe {
+.vid iframe {
+    display: flex;
     margin: 20px auto;
     border-width: 30px;
     border-color: rgb(113, 119, 43);
     border-style: double;
+    align-items: center;
 }
 
 
 .moreInfo{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
     background-color:rgb(158, 212, 156, 0.7);
     border-radius: 10px;
+    width: 100%;
+}
+
+.moreInfo p:first-child {
+    text-align: center;
 }
 
 
 .moreInfo button {
+    text-align: center;
     margin: 20px;
     padding:10px 40px;
     font-size: 30px;
@@ -197,10 +202,13 @@ border-radius: 10px;
     border-radius: 10px;
 }
 
+.moreInfo p:first-child {
+    font-weight: bold;
+}
 
 .moreInfo p {
     font-size: 1.6em;
-    font-weight: bold;
+    margin: 15px;
 }
 
 
@@ -209,25 +217,37 @@ border-radius: 10px;
     padding: 10px;
     border-style: solid;
     font-size: 1.3em;
+    background-color:rgb(158, 212, 156);
+}
+
+.moreBtn {
+    display: flex;
+    flex-direction: column;
 }
 
 
 .gallery {
+    display: flex;
+    flex-direction: column;
     background-color:rgb(158, 212, 156, 0.7);
     border-radius: 10px;
 }
 
-
-.gallery img {
-        margin-left: 50px;
-        margin-bottom: 40px;
-        border-style: double;
-        border-color: rgb(113, 119, 43);
-        border-width: 10px;
+.galleryphotos {
+    display: flex;
+    justify-content: space-around;
 }
 
 
-.gallery > p {
+.gallery img {
+    border-style: double;
+    border-color: rgb(113, 119, 43);
+    border-width: 10px;
+    margin: 0px 20px 30px 20px;
+}
+
+
+#gallery {
     text-align: center;
     font-size: 1.6em;
     font-weight: bold;
@@ -240,13 +260,14 @@ border-radius: 10px;
     .grid {
     display: grid;
     grid-template-areas:
-        'header header'
+        'title title'
+        'nav nav'
         'main main'
-        'section1 section1'
-        'section2 section2'
-        'lside lside'
-        'gallery gallery '
-        'rside rside';
+        'video video'
+        'moreInfo moreInfo'
+        'hours hours'
+        'gallery gallery'
+        'contact contact';
     grid-gap: 10px;
     padding: 10px;
     margin: 0 auto;
@@ -256,15 +277,21 @@ border-radius: 10px;
 
 
     body {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
 
-    #title {
+    .title {
         display: flex;
+        text-align: center;
         padding: 0 20px;
-        text-shadow:5px 5px 2px rgb(184, 183, 92);
         flex-wrap: wrap;
+    }
+
+    .title > div {
+        font-size: 3.2em;
+        color: black;
+        text-shadow:2px 2px 2px rgb(197,172,135);
     }
 
     
@@ -282,8 +309,7 @@ border-radius: 10px;
     }
 
 
-    #contactBtn, #moreBtn, #galleryBtn {
-        font-weight: bold;
+    #homeBtn, #moreBtn, #galleryBtn {
         margin:  10px 100%;
         padding: 5px 50px;
     }

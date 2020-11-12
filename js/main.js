@@ -1,6 +1,6 @@
 
-function hsShow() {
-    var text = document.getElementById("hsPara");
+function showHide(paraId) {
+    var text = document.getElementById(paraId);
 
     if (text.style.display === "none") {
         text.style.display = "block";
@@ -10,26 +10,13 @@ function hsShow() {
     }
 }
 
-
-function dtShow() {
-    var text = document.getElementById("dtPara");
-
-    if (text.style.display === "none") {
-        text.style.display = "block";
+function showHide2(showLyst, hideLyst) {
+    for (let show of showLyst){
+        document.getElementById(show).style.display = "block";
     }
-    else {
-        text.style.display = "none";
-    }
-}
 
-
-function atShow() {
-    var text = document.getElementById("atPara");
-
-    if (text.style.display === "none") {
-        text.style.display = "block";
+    for (let hide of hideLyst) {
+        document.getElementById(hide).style.display = "none";
     }
-    else {
-        text.style.display = "none";
-    }
+
 }
