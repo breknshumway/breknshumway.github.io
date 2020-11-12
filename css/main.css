@@ -1,27 +1,43 @@
-.title { grid-area: title; }
-.navbar { grid-area: nav; }
-.contact { grid-area: contact; }
-.main { grid-area: main; }
-.hours { grid-area: hours; }
-.vid {grid-area: video; }
-.moreInfo {grid-area: moreInfo; }
-.gallery { grid-area: gallery; }
+.title {
+    grid-area: title;
+}
+
+.navbar {
+    grid-area: nav;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.main {
+    grid-area: main;
+}
+
+.hours {
+    grid-area: hours;
+}
+
+.vid {
+    grid-area: video;
+}
+
+.moreInfo {
+    grid-area: moreInfo;
+}
+
+.gallery {
+    grid-area: gallery;
+}
 
 .grid {
     display: grid;
-    grid-template-areas:
-        'title title title title'
-        'nav nav nav nav'
-        'hours main main contact'
-        'moreInfo moreInfo video video'
-        'moreInfo moreInfo video video'
-        'gallery gallery gallery gallery';
+    grid-template-areas: 'title title title title' 'nav nav nav nav' 'hours main main contact' 'moreInfo moreInfo video video' 'moreInfo moreInfo video video' 'gallery gallery gallery gallery';
     grid-gap: 10px;
     padding: 10px;
     margin: 0 150px;
     font-size: 1.3em;
-    }
-
+}
 
 html {
     background-image: url('/photos/massage2.jpg');
@@ -34,16 +50,15 @@ body {
     justify-content: center;
 }
 
-
 .title {
     display: flex;
     justify-content: center;
 }
 
-.title > div {
+.title>div {
     font-size: 4.5em;
-    color: black ;
-    text-shadow:2px 2px 2px rgb(197,172,135);
+    color: black;
+    text-shadow: 2px 2px 2px rgb(197, 172, 135);
 }
 
 #logo {
@@ -54,15 +69,14 @@ body {
 }
 
 .navbar {
-display: flex;
-flex-wrap: wrap;
-font-size: 1.75em;
-background-color:rgb(158, 212, 156, 0.7);
-justify-content: space-around;
-border-radius: 10px;
-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.75em;
+    background-color: rgb(158, 212, 156, 0.7);
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 100%;
 }
-
 
 #homeBtn, #moreBtn, #galleryBtn {
     background-color: rgb(158, 212, 156, 0.7);
@@ -73,17 +87,15 @@ width: 100%;
     border-radius: 5px;
 }
 
-.navbar > div {
+.navbar>div {
     margin: 20px;
 }
 
-
 .contact {
-    background-color:rgb(158, 212, 156, 0.7);
+    background-color: rgb(158, 212, 156, 0.7);
     text-align: start;
     display: table-column;
     border-radius: 10px;
-    
 }
 
 .contactInfo {
@@ -92,13 +104,12 @@ width: 100%;
     align-items: center;
 }
 
-.contact > p {
+.contact>p {
     font-size: 1.6em;
     font-weight: bold;
     text-align: center;
     padding-top: 20px;
 }
-
 
 .contact img {
     width: 220px;
@@ -107,66 +118,56 @@ width: 100%;
     border-color: rgb(113, 119, 43);
 }
 
-
-.contact figcaption{
+.contact figcaption {
     font-size: .75em;
     font-weight: bold;
     text-align: center;
 }
-
 
 #phone, #email {
     color: black;
     font-weight: bold;
 }
 
-
 .main {
     padding: 20px;
-    background-color:rgb(158, 212, 156, 0.7);
+    background-color: rgb(158, 212, 156, 0.7);
     border-radius: 10px;
 }
 
-
-.main > p {
+.main>p {
     font-size: 1.6em;
     font-weight: bold;
     text-align: center;
 }
 
-
 .hours {
     padding: 20px;
-    background-color:rgb(158, 212, 156, 0.7);
+    background-color: rgb(158, 212, 156, 0.7);
     border-radius: 10px;
 }
 
-
-.hours  p:first-child {
+.hours p:first-child {
     font-weight: bold;
 }
 
-
-#list > li {
+#list>li {
     display: flex;
     text-align: start;
 }
 
-
 .vid {
     display: flex;
     flex-direction: column;
-    background-color:rgb(158, 212, 156, 0.7);
+    background-color: rgb(158, 212, 156, 0.7);
     border-radius: 10px;
 }
 
-
-.vid > p {
+.vid>p {
     text-align: center;
     font-size: 1.6em;
     font-weight: bold;
 }
-
 
 .vid iframe {
     display: flex;
@@ -175,14 +176,12 @@ width: 100%;
     border-color: rgb(113, 119, 43);
     border-style: double;
     align-items: center;
-
 }
 
-
-.moreInfo{
+.moreInfo {
     display: flex;
     flex-direction: column;
-    background-color:rgb(158, 212, 156, 0.7);
+    background-color: rgb(158, 212, 156, 0.7);
     border-radius: 10px;
     width: 100%;
 }
@@ -192,11 +191,10 @@ width: 100%;
     padding-top: 20px;
 }
 
-
 .moreInfo button {
     text-align: center;
     margin: 20px;
-    padding:10px 40px;
+    padding: 10px 40px;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
@@ -213,13 +211,11 @@ width: 100%;
     margin: 15px;
 }
 
-
-#hsPara, #dtPara, #atPara{
-    display: none;
+#hsPara, #dtPara, #atPara {
     padding: 10px;
     border-style: solid;
     font-size: 1.3em;
-    background-color:rgb(158, 212, 156);
+    background-color: rgb(158, 212, 156);
 }
 
 .moreBtn {
@@ -227,11 +223,10 @@ width: 100%;
     flex-direction: column;
 }
 
-
 .gallery {
     display: flex;
     flex-direction: column;
-    background-color:rgb(158, 212, 156, 0.7);
+    background-color: rgb(158, 212, 156, 0.7);
     border-radius: 10px;
 }
 
@@ -240,7 +235,6 @@ width: 100%;
     justify-content: space-around;
 }
 
-
 .gallery img {
     border-style: double;
     border-color: rgb(113, 119, 43);
@@ -248,60 +242,38 @@ width: 100%;
     margin: 0px 20px 30px 20px;
 }
 
-
 #gallery {
     text-align: center;
     font-size: 1.6em;
     font-weight: bold;
 }
 
-
-
-
-@media only screen and ( max-width: 980px){
+@media only screen and ( max-width: 980px) {
     .grid {
-    display: grid;
-    grid-template-areas:
-        'title title'
-        'nav nav'
-        'main main'
-        'video video'
-        'moreInfo moreInfo'
-        'hours hours'
-        'gallery gallery'
-        'contact contact';
-    grid-gap: 10px;
-    padding: 10px;
-    margin: 0 auto;
-    font-size: 2.0em;
-    font-weight: bold;
+        display: grid;
+        grid-template-areas: 'title title' 'nav nav' 'main main' 'video video' 'moreInfo moreInfo' 'hours hours' 'gallery gallery' 'contact contact';
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 0 auto;
+        font-size: 2.0em;
     }
-
-
     body {
         font-size: 1em;
     }
-
-
     .title {
         display: flex;
         text-align: center;
         padding: 0 20px;
         flex-wrap: wrap;
     }
-
-    .title > div {
+    .title>div {
         font-size: 3.2em;
         color: black;
-        text-shadow:2px 2px 2px rgb(197,172,135);
+        text-shadow: 2px 2px 2px rgb(197, 172, 135);
     }
-
-    
     #logo {
         display: none;
     }
-
-
     .navbar {
         display: flex;
         margin: 20px;
@@ -309,58 +281,33 @@ width: 100%;
         font-size: 2.0em;
         font-weight: bold;
     }
-
-
     #homeBtn, #moreBtn, #galleryBtn {
-        margin:  10px 100%;
+        margin: 10px 100%;
         padding: 5px 50px;
     }
-
-
     .contact {
         font-size: 1.3em;
         text-align: center;
         display: table-column;
-    }    
-
-
-    .main {
+    }
+    .hours>p {
         font-weight: bold;
     }
-
-
-    .hours > p {
-        font-weight: bold;
-    }
-       
-    
-    #hsPara, #dtPara, #atPara{
-            font-weight: bold;
-    }
-
-
     .gallery {
         font-size: 1.3em;
     }
-
-
     .gallery img {
         display: flex;
-        margin:  10px auto;
+        margin-bottom: 40px;
     }
-
-
     .moreInfo button {
         font-size: 1.3em;
     }
-
-
-    .moreInfo > p {
+    .moreInfo>p {
         font-size: 1.3em;
     }
-
-    
-
+    .videos {
+        display: flex;
+        justify-content: center;
+    }
 }
-
-

@@ -20,8 +20,10 @@
 
     <nav class="navbar">
       <button id="homeBtn" onclick="showHide2(['contact','main','hours'],['vieo','moreInfo','gallery'])">Home</button>
-      <button id="galleryBtn" onclick="showHide2(['gallery'],['contact','main','hours','moreInfo','video'])">Gallery</button>
-      <button id="moreBtn" onclick="showHide2(['moreInfo','video'],['contact','main','hours','gallery'])">More&nbspInformation</button>
+      <button id="galleryBtn"
+        onclick="showHide2(['gallery'],['contact','main','hours','moreInfo','video'])">Gallery</button>
+      <button id="moreBtn"
+        onclick="showHide2(['moreInfo','video'],['contact','main','hours','gallery'])">More&nbspInformation</button>
     </nav>
 
 
@@ -61,13 +63,13 @@
       <p style="text-align: center; font-size: 1.6em;">Hours & Prices</p>
 
       <p>Open Monday - Friday<br>
-         10am - 4pm<br>
-         Closed Saturday and Sunday<br></p>
-         <b>60</b> Minute Massage <b>$60</b><br>
-         <b>90</b> Minute Massage <b>$85</b><br>
-         <b>120</b> Minute Massage <b>$110</b></p>
-         
-         <p><b>Each Add on +$10</b></p>
+        10am - 4pm<br>
+        Closed Saturday and Sunday<br></p>
+      <b>60</b> Minute Massage <b>$60</b><br>
+      <b>90</b> Minute Massage <b>$85</b><br>
+      <b>120</b> Minute Massage <b>$110</b></p>
+
+      <p><b>Each Add on +$10</b></p>
 
       <ul>
         <li>Deep Tissue</li>
@@ -85,9 +87,11 @@
     <section class="vid" id="video" style="display: none;">
       <p>Benefits of Massage Therapy</p>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dITkSlfHTk0" \frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
+      <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dITkSlfHTk0" \frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
     </section>
 
 
@@ -102,13 +106,15 @@
           rock that retains heat. Hot massage stones are heated to between 130 and 145 degrees.</p>
 
         <button id="dtBtn" onclick="showHide('dtPara')">Deep Tissue Massage</button>
-        <p id="dtPara" style="display: none;">Deep tissue massages are used to break up scar tissue and break down muscle adhesions
+        <p id="dtPara" style="display: none;">Deep tissue massages are used to break up scar tissue and break down
+          muscle adhesions
           (the “knots” that we feel in our muscles are muscle adhesions, which are bands of rigid
           and painful muscle tissue). These knots can inhibit our circulation and cause pain and
           inflammation.</p>
 
         <button id="atBtn" onclick="showHide('atPara')">Aroma Therapy Massage</button>
-        <p id="atPara" style="display: none;">Aromatherapy massage is Swedish massage therapy using massage oil or lotion that contains
+        <p id="atPara" style="display: none;">Aromatherapy massage is Swedish massage therapy using massage oil or
+          lotion that contains
           essential oils (highly concentrated plant oils). During an aromatherapy massage, you inhale
           these essential oil molecules or absorb them through your skin. They are thought to promote
           beneficial changes in your mind and body by affecting the limbic system, a region of the brain

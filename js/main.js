@@ -11,6 +11,7 @@ function showHide(paraId) {
 }
 
 function showHide2(showLyst, hideLyst) {
+    
     for (let show of showLyst){
         document.getElementById(show).style.display = "block";
     }
