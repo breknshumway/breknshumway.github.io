@@ -53,6 +53,7 @@ body {
 .title {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .title>div {
@@ -280,6 +281,7 @@ body {
         text-align: center;
         font-size: 2.0em;
         font-weight: bold;
+        margin: 20px auto;
     }
     #homeBtn, #moreBtn, #galleryBtn {
         margin: 10px 100%;
@@ -289,6 +291,7 @@ body {
         font-size: 1.3em;
         text-align: center;
         display: table-column;
+        margin-top: 15px;
     }
     .hours>p {
         font-weight: bold;
@@ -309,5 +312,8 @@ body {
     .videos {
         display: flex;
         justify-content: center;
+    }
+    .moreInfo {
+        margin-top: 25px;
     }
 }
