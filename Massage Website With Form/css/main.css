@@ -1,0 +1,468 @@
+.title {
+    grid-area: title;
+}
+
+.navbar {
+    grid-area: nav;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.main {
+    grid-area: main;
+}
+
+.hours {
+    grid-area: hours;
+}
+
+.vid {
+    grid-area: video;
+}
+
+.moreInfo {
+    grid-area: moreInfo;
+}
+
+.gallery {
+    grid-area: gallery;
+}
+
+.visitorForm {
+    grid-area: visitor;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 'title title title title' 'nav nav nav nav' 'hours main main contact' 'moreInfo moreInfo video video' 'moreInfo moreInfo video video' 'gallery gallery gallery gallery' 'visitor visitor visitor visitor';
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0 150px;
+    font-size: 1.3em;
+}
+
+html {
+    background-image: url('/img/massage2.jpg');
+    background-position: left, bottom;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.title>div {
+    font-size: 4.5em;
+    color: black;
+    text-shadow: 2px 2px 2px rgb(197, 172, 135);
+}
+
+#logo {
+    position: absolute;
+    left: -0px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.75em;
+    background-color: rgb(158, 212, 156, 0.7);
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#homeBtn, #moreBtn, #galleryBtn, #visitBtn {
+    background-color: rgb(158, 212, 156, 0.7);
+    padding: 5px 40px;
+    margin: 10px;
+    font-size: 1.0em;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+}
+
+.navbar>div {
+    margin: 20px;
+}
+
+.contact {
+    background-color: rgb(158, 212, 156, 0.7);
+    text-align: start;
+    display: table-column;
+    border-radius: 10px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact>p {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact img {
+    width: 220px;
+    height: 330px;
+    border-style: solid;
+    border-color: rgb(113, 119, 43);
+}
+
+.contact figcaption {
+    font-size: .75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#phone, #email {
+    color: black;
+    font-weight: bold;
+}
+
+.main {
+    padding: 20px;
+    background-color: rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+}
+
+.main>p {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hours {
+    padding: 20px;
+    background-color: rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+}
+
+.hours p:first-child {
+    font-weight: bold;
+}
+
+#list>li {
+    display: flex;
+    text-align: start;
+}
+
+.vid {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+}
+
+.vid>p {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.vid iframe {
+    display: flex;
+    margin: 20px;
+    border-width: 30px;
+    border-color: rgb(113, 119, 43);
+    border-style: double;
+    align-items: center;
+}
+
+.moreInfo {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.moreInfo p:first-child {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.moreInfo button {
+    text-align: center;
+    margin: 20px;
+    padding: 10px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+}
+
+.moreInfo p:first-child {
+    font-weight: bold;
+}
+
+.moreInfo p {
+    font-size: 1.6em;
+    margin: 15px;
+}
+
+#hsPara, #dtPara, #atPara {
+    padding: 10px;
+    border-style: solid;
+    font-size: 1.3em;
+    background-color: rgb(158, 212, 156);
+}
+
+.moreBtn {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+}
+
+.galleryphotos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery img {
+    border-style: double;
+    border-color: rgb(113, 119, 43);
+    border-width: 10px;
+    margin: 0px 20px 30px 20px;
+}
+
+#gallery {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/* Form Formatting begins here */
+.visitorForm{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    background-color: rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+}
+
+#formTitle{
+    text-align: center;
+    font-size: 2em;
+}
+
+.visitorForm label {
+    font-size: 1.5em;
+}
+
+.visitorForm input{
+    width: 300px;
+    height: 40px;
+    font-size: 1em;
+    background-color: rgb(223, 228, 216)
+}
+
+.visitorForm textarea{
+    width: 275px;
+    height: 150px;
+    font-size: 1em;
+    background-color: rgb(223, 228, 216)
+}
+
+.successMsg{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 100px;
+}
+
+form {
+    width: auto;
+}
+
+.errorMsg {
+    color: red;
+}
+
+input.was-validated:invalid {
+    color: red;
+    border: 1px solid red;
+}
+
+input.was-validated:invalid~div {
+    display: block;
+}
+
+input:valid~div {
+    display: none;
+}
+
+input:invalid~div {
+    display: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex {
+    list-style-type: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.flex li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-start;
+}
+
+.flex li li input, .flex li textarea {
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.flex button {
+    margin: auto;
+    padding: 15px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    background: #D84315;
+    color: rgb(223, 228, 216);
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 4px;
+    font-size: 1.5em;
+}
+
+.flex>li {
+    margin-bottom: 20px;
+}
+
+.flex>li>label {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 140px;
+    flex: 1 0 140px;
+}
+
+.flex>li+* {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 200px;
+    flex: 1 0 200px;
+}
+
+.flex>input[type='checkbox']~div.errorMsg {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 350px;
+    flex: 1 0 350px;
+    text-align: right;
+}
+
+.box>input{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: rgb(223, 228, 216)
+}
+
+/* Form formatting ends here */
+
+@media only screen and ( max-width: 980px) {
+    .grid {
+        display: grid;
+        grid-template-areas: 'title title' 'nav nav' 'main main' 'video video' 'moreInfo moreInfo' 'hours hours' 'gallery gallery' 'contact contact' 'visitor visitor';
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 0 auto;
+        font-size: 2.0em;
+    }
+    body {
+        font-size: 1em;
+    }
+    .title {
+        display: flex;
+        text-align: center;
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+    .title>div {
+        font-size: 3.2em;
+        color: black;
+        text-shadow: 2px 2px 2px rgb(197, 172, 135);
+    }
+    #logo {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        margin: 20px;
+        text-align: center;
+        font-size: 2.0em;
+        font-weight: bold;
+        margin: 20px auto;
+    }
+    #homeBtn, #moreBtn, #galleryBtn, #visitBtn {
+        margin: 10px 100%;
+        padding: 5px 50px;
+    }
+    .contact {
+        font-size: 1.3em;
+        text-align: center;
+        display: table-column;
+        margin-top: 15px;
+    }
+    .hours>p {
+        font-weight: bold;
+    }
+    .gallery {
+        font-size: 1.3em;
+    }
+    .gallery img {
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .moreInfo button {
+        font-size: 1.3em;
+    }
+    .moreInfo>p {
+        font-size: 1.3em;
+    }
+    .videos {
+        display: flex;
+        justify-content: center;
+    }
+    .moreInfo {
+        margin-top: 25px;
+    }
+}
