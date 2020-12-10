@@ -83,13 +83,17 @@ body {
     width: 100%;
 }
 
-#homeBtn, #moreBtn, #galleryBtn, #visitBtn {
+#homeBtn, #moreBtn, #galleryBtn, #visitBtn, #newVisBtn, #editVisBtn {
     background-color: rgb(158, 212, 156, 0.7);
     padding: 5px 40px;
     margin: 10px;
     font-size: 1.0em;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 5px;
+}
+
+#newVisBtn, #editVisBtn {
+    background-color: rgb(158, 212, 156);
 }
 
 .navbar>div {
@@ -254,7 +258,8 @@ body {
 }
 
 /* Form Formatting begins here */
-.visitorForm{
+
+.visitorForm {
     display: flex;
     text-align: left;
     flex-direction: column;
@@ -262,7 +267,7 @@ body {
     border-radius: 10px;
 }
 
-#formTitle{
+#formTitle {
     text-align: center;
     font-size: 2em;
 }
@@ -271,21 +276,21 @@ body {
     font-size: 1.5em;
 }
 
-.visitorForm input{
+.visitorForm input {
     width: 300px;
     height: 40px;
     font-size: 1em;
     background-color: rgb(223, 228, 216)
 }
 
-.visitorForm textarea{
+.visitorForm textarea {
     width: 275px;
     height: 150px;
     font-size: 1em;
     background-color: rgb(223, 228, 216)
 }
 
-.successMsg{
+.successMsg {
     text-align: center;
     font-size: 2em;
     padding-bottom: 100px;
@@ -389,7 +394,7 @@ input:invalid~div {
     text-align: right;
 }
 
-.box>input{
+.box>input {
     width: 30px;
     height: 30px;
     margin-right: 20px;
@@ -397,6 +402,27 @@ input:invalid~div {
 }
 
 /* Form formatting ends here */
+
+/* Table formatting starts here */
+
+#visitorsTable {
+    padding: 30px;
+    background-color: rgb(158, 212, 156, 0.7);
+    border-radius: 10px;
+    width: auto;
+}
+
+#visitorsTable tr:nth-child(even) {
+    background-color: rgb(158, 212, 156);
+}
+
+#visitorsTable tr:nth-child(odd) {
+    background-color: rgb(110, 172, 108);
+}
+
+#visitorsTable td {
+    padding: 10px;
+}
 
 @media only screen and ( max-width: 980px) {
     .grid {
