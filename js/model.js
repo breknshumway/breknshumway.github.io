@@ -59,11 +59,6 @@ function MakeVisitorTable(containerId, newId, visitors) {
 }
 
 
-
-function modelAddVisitor(visitor) {//adds new visitor object to your array
-}
-function modelDeleteVisitor(id) {//removes visitor object with given 'id' from array
-}
 function findVisitor(id) {
     return visitors.find(visitor => visitor.id == id)
 }
