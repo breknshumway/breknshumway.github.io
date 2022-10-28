@@ -5158,7 +5158,7 @@ textarea.form-control-lg {
   align-items: center;
 }
 .flex-right{
-  text-align: center;
+  text-align: left;
   padding: 0px 20px 0px 20px;
 }
 @media (min-width: 576px) {
@@ -5171,7 +5171,7 @@ textarea.form-control-lg {
     align-items: center;
   }
   .flex-right{
-    text-align: center;
+    text-align: left;
     padding: 0px 20px 0px 20px;
   }
   .list-group-horizontal-sm {
@@ -5207,7 +5207,7 @@ textarea.form-control-lg {
     align-items: center;
   }
   .flex-right{
-    text-align: center;
+    text-align: left;
     padding: 0px 20px 0px 20px;
   }
   .list-group-horizontal-md {
