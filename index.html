@@ -34,8 +34,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pysock">Python Server Client</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pysock">Python Tank Game</a></li>
                 </ul>
             </div>
         </nav>
@@ -172,39 +171,31 @@
             <!-- PySock-->
             <section class="resume-section" id="pysock">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Python Server Client</h2>
+                    <h2 class="mb-5">Python Tank Game</h2>
                         <div class="project-img-div">
-                            <div class="flex-left"><img class="project-img" src="/pysock/PySock1.png"></div>
-                            <div class="flex-right">Image 1</p>
+                            <div class="flex-left"><img class="project-img" src="/pysock/pysock1.png"></div>
+                            <div class="flex-right">To start this game you will need one Server and two Clients. To start the server run the following command: <br><br> "Python3 main.py 0.0.0.0 4444 Server"</p>
                         </div>
                         <div class="project-img-div">
-                            <div class="flex-left"><img class="project-img" src="/pysock/PySock2.png"></div>
-                            <div class="flex-right">Image 2</p>
+                            <div class="flex-left"><img class="project-img" src="/pysock/pysock2.png"></div>
+                            <div class="flex-right">To start this game you will need one Server and two Clients. To start the Clients run the following command in two differnt terminals: <br><br> "Python3 main.py 0.0.0.0 4444 Client" <br><br> As you can see the Client and Server are talking to eachother.</p>
                         </div>
                         <div class="project-img-div">
-                            <div class="flex-left"><img class="project-img" src="/pysock/PySock3.png"></div>
-                            <div class="flex-right">Image 3</p>
+                            <div class="flex-left"><img class="project-img" src="/pysock/pysock3.png"></div>
+                            <div class="flex-right">You can see that the client sent the following command: <br><br> {'action': 0} <br><br>This is the command to start a new game. Both Clients will need to send this command.</p>
                         </div>
                         <div class="project-img-div">
-                            <div class="flex-left"><img class="project-img" src="/pysock/PySock4.png"></div>
-                            <div class="flex-right">Image 4</p>
+                            <div class="flex-left"><img class="project-img" src="/pysock/pysock4.png"></div>
+                            <div class="flex-right">This shows that the Server has recieved both Clients and it has started a new game. <br><br> It automatically assigned each Client a character. Client 1 is player "O" and Client 2 is player "X". </p>
                         </div>
-
-
-                </div>
-
-            </section>
-
-
-            <hr class="m-0" />
-            <!-- Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <h3>Stock Market Prediction</h3>
-                    <div class="subheading mb-3">In Progress</div>
-                    <h3>Object Detection</h3>
-                    <div class="subheading mb-3">In Progress</div>
+                        <div class="project-img-div">
+                            <div class="flex-left"><img class="project-img" src="/pysock/pysock5.png"></div>
+                            <div class="flex-right">This shows that the Server recieved the following command: <br><br>{'action': 1, 'row': 9, 'col': 9} <br><br> This is the command to fire.</p>
+                        </div>
+                        <div class="project-img-div">
+                            <div class="flex-left"><img class="project-img" src="/pysock/pysock6.png"></div>
+                            <div class="flex-right">This shows you that the Server responded correctly and the <strong>*</strong> (Bullet) is in the correct position. <br><br> This also shows that the other Client sent the command to fire into the box next to the first shot.</p>
+                        </div>
                 </div>
             </section>
 

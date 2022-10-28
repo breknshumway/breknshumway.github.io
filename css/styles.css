@@ -5154,8 +5154,12 @@ textarea.form-control-lg {
 }
 .project-img-div{
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
+}
+.flex-right{
+  text-align: center;
+  padding: 0px 20px 0px 20px;
 }
 @media (min-width: 576px) {
   .project-img {
@@ -5163,8 +5167,12 @@ textarea.form-control-lg {
   }
   .project-img-div{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction:column;
     align-items: center;
+  }
+  .flex-right{
+    text-align: center;
+    padding: 0px 20px 0px 20px;
   }
   .list-group-horizontal-sm {
     align-items: center;
@@ -5195,8 +5203,12 @@ textarea.form-control-lg {
   }
   .project-img-div{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
+  }
+  .flex-right{
+    text-align: center;
+    padding: 0px 20px 0px 20px;
   }
   .list-group-horizontal-md {
     flex-direction: row;
@@ -5226,19 +5238,15 @@ textarea.form-control-lg {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: yellow;
     text-align: center;
   }
   .flex-left{
     flex: 50%;
     width: 50%;
-    background-color: pink;
   }
   .flex-right{
     flex: 50%;
     width: 50%;
-    height: 23.5em;
-    background-color: lightslategray;
     text-align: left;
     padding: 20px;
   }
@@ -5273,19 +5281,15 @@ textarea.form-control-lg {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: yellow;
     text-align: center;
   }
   .flex-left{
     flex: 50%;
     width: 50%;
-    background-color: pink;
   }
   .flex-right{
     flex: 50%;
     width: 50%;
-    height: 23.5em;
-    background-color: lightslategray;
     text-align: left;
     padding: 20px;
   }
@@ -5320,19 +5324,15 @@ textarea.form-control-lg {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: yellow;
     text-align: center;
   }
   .flex-left{
     flex: 50%;
     width: 50%;
-    background-color: pink;
   }
   .flex-right{
     flex: 50%;
     width: 50%;
-    height: 23.5em;
-    background-color: lightslategray;
     text-align: left;
     padding: 20px;
   }
