@@ -5149,10 +5149,25 @@ textarea.form-control-lg {
   margin-left: -1px;
   border-left-width: 1px;
 }
-
+.project-img {
+  width: 100%;
+}
+.project-img-div{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
 @media (min-width: 576px) {
+  .project-img {
+    width: 100%;
+  }
+  .project-img-div{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .list-group-horizontal-sm {
-    flex-direction: row;
+    align-items: center;
   }
   .list-group-horizontal-sm > .list-group-item:first-child {
     border-bottom-left-radius: 0.25rem;
@@ -5175,6 +5190,14 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
+  .project-img {
+    width: 100%;
+  }
+  .project-img-div{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .list-group-horizontal-md {
     flex-direction: row;
   }
@@ -5199,6 +5222,29 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 992px) {
+  .project-img-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: yellow;
+    text-align: center;
+  }
+  .flex-left{
+    flex: 50%;
+    width: 50%;
+    background-color: pink;
+  }
+  .flex-right{
+    flex: 50%;
+    width: 50%;
+    height: 23.5em;
+    background-color: lightslategray;
+    text-align: left;
+    padding: 20px;
+  }
+  .project-img{
+    width: 100%;
+  }
   .list-group-horizontal-lg {
     flex-direction: row;
   }
@@ -5223,6 +5269,29 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 1200px) {
+  .project-img-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: yellow;
+    text-align: center;
+  }
+  .flex-left{
+    flex: 50%;
+    width: 50%;
+    background-color: pink;
+  }
+  .flex-right{
+    flex: 50%;
+    width: 50%;
+    height: 23.5em;
+    background-color: lightslategray;
+    text-align: left;
+    padding: 20px;
+  }
+  .project-img{
+    width: 100%;
+  }
   .list-group-horizontal-xl {
     flex-direction: row;
   }
@@ -5247,6 +5316,29 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 1400px) {
+  .project-img-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: yellow;
+    text-align: center;
+  }
+  .flex-left{
+    flex: 50%;
+    width: 50%;
+    background-color: pink;
+  }
+  .flex-right{
+    flex: 50%;
+    width: 50%;
+    height: 23.5em;
+    background-color: lightslategray;
+    text-align: left;
+    padding: 20px;
+  }
+  .project-img{
+    width: 100%;
+  }
   .list-group-horizontal-xxl {
     flex-direction: row;
   }
