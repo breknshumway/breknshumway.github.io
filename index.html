@@ -39,6 +39,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#subwords">Subwords C++</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#textinfo">Text Info Python</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#frr">FRR Network</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#frr2">FRR Example 2</a></li>
                 </ul>
             </div>
         </nav>
@@ -296,6 +297,28 @@
                     <div class="project-img-div">
                         <div class="flex-left"><img class="project-img" src="/FRR_Network/frr4.png"></div>
                         <p class="flex-right">In this image you can see that I created a Prefix-list that included my network prefix. Then I took that Prefix-list and put it into a Route-map. With that route map, I matched on my Prefix-list and only allowed my Border router to advertise my prefix to it's two BPG neighbors.  </p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <hr class="m-0" />
+            <!-- FRR Example 2-->
+            <section class="resume-section" id="frr2">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">FRR Example 2</h2>
+                    <div class="project-img-div">
+                        <div class="flex-left"><img style="border: solid black 3px;" class="project-img" src="/FRR_Network/frr2-1.png"></div>
+                        <p class="flex-right">This is the network that the images below will be describing.</p>
+                    </div>
+                    <div class="project-img-div">
+                        <div class="flex-left"><img class="project-img" src="/FRR_Network/frr2-2.png"></div>
+                        <p class="flex-right">The goal of this project was to have all of the traffic from the Agents subnet go through ISP1, and all traffic from the Server and Operations subnet go through ISP2. There had to be enough ip space for there to be 140 machines on the Agents subnet, 66 on the Server subnet, and 36 on the Operations subnet.</p>
+                    </div>
+                    <div class="project-img-div">
+                        <div class="flex-left"><img class="project-img" src="/FRR_Network/frr2-3.png"></div>
+                        <p class="flex-right">In this image and the one above you can see all of the configurations that were made to the Border1 and Border2 routers to reach the goal. As you can see, I made the Server and Operations subnets from the aggregate 192.168.15.0/24, this way it was easier to filter and direct the traffic. </p>
                     </div>
                 </div>
             </section>
